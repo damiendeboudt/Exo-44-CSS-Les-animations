@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.premier {
+    width: 250px;
+    height: 250px;
+    background-color: yellow;
+}
+
+   span{
+       animation-name: texte;
+    animation-duration: 10s;
+}
+@keyframes texte {
+    from{
+        font-size:2rem;
+    }
+    to{
+        font-size: 4rem;
+    }
+}
+.premier{
+    animation-name: background;
+    animation-duration: 10s;
+}
+@keyframes background {
+    from{
+        background-color: yellow;
+    }
+    to{
+        background-color: blue;
+    }
+}
+.jesuis{
+    animation-name: size;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate ;
+}
+@keyframes size {
+    from{
+        width: 10rem;
+        background-color: red;
+    }
+    to{
+        width: 40rem;
+        background-color: red;
+    }
+}
+section{
+    animation-name: rotate;
+    animation-duration: 5s;
+}
+@keyframes rotate {
+from{
+    transform:rotate(0deg);
+}
+    to{
+        transform:rotate(360deg);
+    }
+}
+.echelle{
+    animation-name: echelle;
+    animation-duration: 15s;
+}
+@keyframes echelle {
+    from{
+        transform: scale(100%);
+    }
+    to{
+        transform: scale(150%);
+    }
+}
+.balades {
+    width: 20rem;
+    height: 20rem;
+    background-color: orange;
+    animation-name: balade;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes balade {
+    from{
+       margin: 1rem 1rem;
+    }
+    to{
+        margin: 1rem 80rem;
+    }
+}
